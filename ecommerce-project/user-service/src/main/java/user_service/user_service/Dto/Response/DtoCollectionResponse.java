@@ -1,0 +1,17 @@
+package user_service.user_service.Dto.Response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Collection;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class DtoCollectionResponse<T> {
+
+    private Collection<T> collection;
+}
